@@ -18,8 +18,8 @@ public class BodyRotator : MonoBehaviour
     {
         if (JS.Horizontal != 0)
         {
-            go.transform.Rotate(Vector3.up, JS.Horizontal * Speed * Time.deltaTime, Space.World);
-           // go.transform.Rotate(Vector3.right, JS.Vertical * Speed * Time.deltaTime, Space.World);
+            go.transform.Rotate(Vector3.up, JS.Horizontal * -Speed * Time.deltaTime, Space.World);
+           go.transform.Rotate(Vector3.right, JS.Vertical * Speed * Time.deltaTime, Space.World);
         }
     }
 }
